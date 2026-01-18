@@ -8,7 +8,7 @@ def assign_proposals_to_gt(proposals, gt_boxes, gt_labels, iou_threshold=0.1):
     """
     proposals shape: [num_proposals, 4], (x1, y1, x2, y2)
     gt_boxes shape: [num_gt_boxes, 4], (x1, y1, x2, y2)
-    gt_labels shape: [num_gt_boxes]
+    gt_labels shape: [num_gt_boxes], The category of each ground truth bounding box
     return:
         labels shape: [num_proposals], bbox_targets shape: [num_proposals, 4]
     """
